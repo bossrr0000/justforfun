@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Contexto Pro Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contexto Pro Solver</h1>
+        
+        <div id="hints-container">
+            <div class="hint-row">
+                <input type="text" class="hint-word" placeholder="Keyword">
+                <input type="number" class="hint-pos" placeholder="Position">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="add-hint">+</button>
+            <button id="search-btn">Search Game</button>
+        </div>
+
+        <div id="progress-wrapper" style="display: none;">
+            <div id="status-text">Preparing...</div>
+            <div class="progress-bar"><div id="progress-fill"></div></div>
+        </div>
+
+        <div id="result-area"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
