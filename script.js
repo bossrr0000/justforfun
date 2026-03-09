@@ -97,3 +97,4 @@ function toggleGrid(id) {
     const el = document.getElementById(id);
     el.style.display = (el.style.display === "none") ? "grid" : "none";
 }
+
