@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Contexto Pro Solver</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,8 +12,9 @@
         
         <div id="hints-container">
             <div class="hint-row">
-                <input type="text" class="hint-word" placeholder="Keyword">
-                <input type="number" class="hint-pos" placeholder="Position">
+                <input type="text" class="hint-word" spellcheck="false">
+                <input type="number" class="hint-pos">
+                <button class="remove-btn" onclick="removeHint(this)">×</button>
             </div>
         </div>
 
@@ -22,8 +24,10 @@
         </div>
 
         <div id="progress-wrapper" style="display: none;">
-            <div id="status-text">Preparing...</div>
-            <div class="progress-bar"><div id="progress-fill"></div></div>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <div id="status-text">Scanning...</div>
         </div>
 
         <div id="result-area"></div>
